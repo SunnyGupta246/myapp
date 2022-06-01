@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter); //when we don't have folder and still want to rout the it comes to it
 app.use('/users', usersRouter);
 app.use('/student', studentRouter);   //Routing
-app.use('/teacher', teacherRouter);
+// app.use('/teacher', teacherRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {app.use('/student', studentRouter);   //Routing
