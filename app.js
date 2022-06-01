@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var studentRouter = require('./routes/student');
+var studentRouter = require('./routes/student');//Importing student
 
 
 var app = express();
@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter); //when we don't have folder and still want to rout the it comes to it
 app.use('/users', usersRouter);
-app.use('/student', studentRouter);   //Routing
+app.use('/student', studentRouter);   //setting student and giving to import
 // app.use('/teacher', teacherRouter);
 
 // catch 404 and forward to error handler
