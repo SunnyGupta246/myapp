@@ -49,7 +49,7 @@ router.get('/:da', function(req, res,) {
 
 router.post('/data', function(req, res, next) {
   console.log(req.body);//print the req
-  // console.log(req.query.lname);
+  console.log(req.query.lname);
   // res.json({name:"SHivam beta"}); //send the response to the server basically a (Get request) 
  res.render('index', { title: req.body.fname});
 });
