@@ -5,7 +5,7 @@ var router = express.Router();
 /* GET home page. */
 // router.get('/data', function(req, res, next) {
 //   console.log(req);//print the req
-//   res.json({name:"SHivam beta"}); //send the response to the server basically a (Get request) 
+//   res.json({name:"SHivam"}); //send the response to the server basically a (Get request) 
 //   // res.render('index', { title: 'Express' });
 // });
 
@@ -31,7 +31,7 @@ var router = express.Router();
   //   res.json({sum:z});
   // });
 //router.get('/:da', function(req, res,) {
-  // res.json({name:"Saurav"});//send the response to the server basically a (Get request) 
+  // res.json({name:"Sunny"});//send the response to the server basically a (Get request) 
   //res.render('teacher', { title: req.params.da,name1:req.params });
 //});
 
@@ -41,16 +41,16 @@ var router = express.Router();
 //  res.render('index', { title: 'Express' });
 // });
 
- router.get('/data', function(req, res, next) {
-   console.log(req.query);//print the req
-    res.json({fname:"SHivam beta"}); //send the response to the server basically a (Get request) 
-  res.render('index', { title: req.query.fname});
- })
-//router.post('/data', function(req, res, next) {
-//  console.log(req.body);//print the req
-//  console.log(req.query.lname);
-//  // res.json({name:"SHivam beta"}); //send the response to the server basically a (Get request) 
-// res.render('index', { title: req.body.fname});
-//});
+// router.get('/data', function(req, res, next) {
+//   console.log(req.query);//print the req
+//    res.json({fname:"Sunny"}); //send the response to the server basically a (Get request) 
+//  res.render('index', { title: req.query.fname});
+// })
+router.post('/data', function(req, res, next) {
+  console.log(req.body);//print the req
+  console.log(req.query.lname);
+  res.json({name:"SHivam"}); //send the response to the server basically a (Get request) 
+ res.render('index', { title: req.body.fname});
+});
 
 module.exports = router;
