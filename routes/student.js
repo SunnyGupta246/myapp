@@ -12,7 +12,7 @@ var router = express.Router();
 
 router.get('/:da', function(req, res, next) {
     //Params used to take variable (teacher/hahah() 
-    res.render('teacher', { title:req.params.da });
+    res.render('teacher',  { title:req.params.da });
 });
 
 
