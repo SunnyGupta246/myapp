@@ -34,7 +34,7 @@ var mysql = require('mysql'); //calling another file or exporting
     console.log("Connected!");
   });
 /* GET home page. */
-router.get('/', function(req, res) {
+router.get('/', function(req, res)  {
 //   console.log(req);
 console.log("I am fine")
   res.render('login');
