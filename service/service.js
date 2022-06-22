@@ -8,7 +8,7 @@ var func = {
     b:()=>{
         return "Idiot"
     }
-    
+     
 }
 
 module.exports = func;

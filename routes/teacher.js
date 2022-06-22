@@ -7,7 +7,7 @@ router.post('/data', function(req, res, next) {
   console.log(req.body)
   console.log(req.query.lname)
   // res.json({name:req.query.fname})
-  res.render('index', { title: req.body.fname });
+  res.render('index', { title: req.body.fname }); 
 });
 
 router.get('/data', function(req, res, next) {
