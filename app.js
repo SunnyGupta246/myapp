@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var studnetRouter = require('./routes/student');
+var studentRouter = require('./routes/student');
 var teacherRouter = require('./routes/teacher');
 var loginRouter = require('./routes/login')
 var app = express();
@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/studnet', studnetRouter);
+app.use('/student', studentRouter);
 app.use('/teacher', teacherRouter);
 app.use('/users', usersRouter);
 app.use('/login', loginRouter);
